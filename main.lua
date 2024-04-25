@@ -8,8 +8,6 @@ if abc == "true" then
 print("Whitelisted")
 elseif abc == "false" then
 print(_G.Settings.text)
-else
-print("Unknown response")
 end
 
 --// Script 
