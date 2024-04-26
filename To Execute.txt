@@ -1,2 +1,2 @@
 _G.Key = "Key"
-loadstring(game:HttpGet('http://yourrawscriptlink.com/scriptname.lua',true))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/UnstableSolutions/Whitelist-sys/main/main.lua',true))()
