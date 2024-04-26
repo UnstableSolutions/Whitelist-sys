@@ -1,0 +1,2 @@
+_G.Key = "Key"
+loadstring(game:HttpGet('http://yourrawscriptlink.com/scriptname.lua',true))()
