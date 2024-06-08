@@ -1,2 +1,0 @@
-_G.Key = "Key"
-loadstring(game:HttpGet('https://raw.githubusercontent.com/UnstableSolutions/Whitelist-sys/main/main.lua',true))()
