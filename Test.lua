@@ -1,4 +1,3 @@
-
 local HttpService = game:GetService("HttpService")
 local StarterGui = game:GetService("StarterGui")
 local LuaName = "KeyAuth Lua Example"
@@ -54,7 +53,7 @@ else
 end
 
 print("\n\n Licensing... \n")
-local req = game:HttpGet('https://keyauth.win/api/1.1/?name=' .. Name .. '&ownerid=' .. Ownerid .. '&type=license&key=' .. License ..'&ver=' .. APPVersion .. '&sessionid=' .. sessionid)
+local req = game:HttpGet('https://keyauth.win/api/1.1/?name=' .. name .. '&ownerid=' .. ownerid .. '&ver=' .. version .. '&sessionid=' .. sessionid)
 local data = HttpService:JSONDecode(req)
 
 
