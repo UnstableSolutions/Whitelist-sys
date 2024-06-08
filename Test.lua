@@ -33,10 +33,3 @@ end
 
 
 
-
-
-_G.key = "Key_Here_bro"
-loadstring(game:HttpGet('https://raw.githubusercontent.com/UnstableSolutions/Whitelist-sys/main/Test.lua'))()
-
-
-
