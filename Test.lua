@@ -1,17 +1,24 @@
 local function isValidKey(key)
     
-    local whitelist = {
-        
-        "jk21p9vUObsn",
-        "valid_key_2",
-        
-    }
+    local whitelistURL = "https://raw.githubusercontent.com/UnstableSolutions/Whitelist-sys/main/Keys.lua"
     
     
-    for _, whitelistKey in ipairs(whitelist) do
-        if whitelistKey == key then
-            return true 
+    local success, whitelist = pcall(game.HttpService.GetAsync, game.HttpService, whitelistURL)
+    
+    
+    if success then
+        
+        whitelist = loadstring(whitelist)()
+        
+        
+        for _, whitelistKey in ipairs(whitelist) do
+            if whitelistKey == key then
+                return true 
+            end
         end
+    else
+        
+        print("Error fetching whitelist:", whitelist)
     end
     
     return false 
