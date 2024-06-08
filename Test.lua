@@ -1,7 +1,7 @@
 
 local function isValidKey(key)
     
-    local codeURL = "https://raw.githubusercontent.com/UnstableSolutions/Whitelist-sys/main/Test.lua"
+    local codeURL = "https://raw.githubusercontent.com/UnstableSolutions/Whitelist-sys/main/Keys.lua"
     
     
     local success, code = pcall(game.HttpService.GetAsync, game.HttpService, codeURL)
