@@ -1,3 +1,4 @@
+
 local HttpService = game:GetService("HttpService")
 local StarterGui = game:GetService("StarterGui")
 local LuaName = "KeyAuth Lua Example"
@@ -13,7 +14,6 @@ local initialized = false
 local sessionid = ""
 
 
---* Application Details *--
 local name = "yoo"; -- Application Name
 local ownerid = "vNMOjAKUC3"; -- Owner ID
 local version = "1.0"; -- Application Version
@@ -78,6 +78,4 @@ StarterGui:SetCore("SendNotification", {
 --* Your code here *--
 
 --* Example Code to show user data *-- 
-print(' Logged In!')
-print(' Username:' .. data.info.username)
-print(' Last login at:' .. data.info.lastlogin)
+print(' Logged In!'.. data.info.username)
