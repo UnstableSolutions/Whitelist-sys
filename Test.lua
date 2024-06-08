@@ -1,14 +1,15 @@
+
 local function isValidKey(key)
     
-    local whitelistURL = "https://raw.githubusercontent.com/UnstableSolutions/Whitelist-sys/main/Keys.lua"
+    local codeURL = "https://raw.githubusercontent.com/UnstableSolutions/Whitelist-sys/main/Test.lua"
     
     
-    local success, whitelist = pcall(game.HttpService.GetAsync, game.HttpService, whitelistURL)
+    local success, code = pcall(game.HttpService.GetAsync, game.HttpService, codeURL)
     
-    
+   
     if success then
-        
-        whitelist = loadstring(whitelist)()
+       
+        local whitelist = loadstring(code)()
         
         
         for _, whitelistKey in ipairs(whitelist) do
@@ -17,19 +18,15 @@ local function isValidKey(key)
             end
         end
     else
-        
-        print("Error fetching whitelist:", whitelist)
+     
+        print("Error fetching whitelist Lua code:", code)
     end
     
     return false 
 end
-
 
 if _G.Key and isValidKey(_G.Key) then
     print("Key is valid. Access granted.")
 else
     print("Invalid key. Access denied.")
 end
-
-
-
