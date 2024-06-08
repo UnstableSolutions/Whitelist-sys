@@ -14,11 +14,11 @@ local sessionid = ""
 
 
 --* Application Details *--
-Name = "" --* Application Name
-Ownerid = "" --* OwnerID
-APPVersion = "1.0"     --* Application Version
+local name = "yoo"; -- Application Name
+local ownerid = "vNMOjAKUC3"; -- Owner ID
+local version = "1.0"; -- Application Version
 
-local req = game:HttpGet('https://keyauth.win/api/1.1/?name=' .. Name .. '&ownerid=' .. Ownerid .. '&type=init&ver=' .. APPVersion)
+local req = game:HttpGet('https://keyauth.win/api/1.1/?name=' .. name .. '&ownerid=' .. ownerid .. '&type=init&ver=' .. version)
 
 if req == "KeyAuth_Invalid" then 
    print(" Error: Application not found.")
